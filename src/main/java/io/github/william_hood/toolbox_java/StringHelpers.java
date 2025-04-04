@@ -77,7 +77,7 @@ public class StringHelpers {
      * @return true if both strings are null or if both are exactly the same content without distinguishing between upper and lower case. false otherwise.
      */
     public static Boolean stringsMatchCaseInspecific(String thisString, String theOther) {
-        return StringExtensionsKt.matchesCaseInspecific(thisString, theOther);
+        return StringExtensionsKt.matchesCaseInsensitive(thisString, theOther);
     }
 
     /**
