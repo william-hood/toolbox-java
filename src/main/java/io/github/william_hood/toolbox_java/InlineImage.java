@@ -1,0 +1,68 @@
+// Copyright (c) 2023, 2025 William Arthur Hood
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights to
+// use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+// of the Software, and to permit persons to whom the Software is furnished
+// to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+// OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+// HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+// WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+// OTHER DEALINGS IN THE SOFTWARE.
+
+package io.github.william_hood.toolbox_java;
+
+/**
+ * InlineImage: This is one of the remaining vestiges of deprecated code that programmatically represented HTML.
+ * It represents an image that has been inserted directly into an HTML file as Base64 encoded data. A deprecated
+ * alternative used to exist that put the image in the CSS style section, but was deprecated because some
+ * browsers did not work with it.
+ */
+public class InlineImage {
+    private io.github.william_hood.toolbox_kotlin.InlineImage KInlineImage;
+
+    /**
+     * InlineImage: This is one of the remaining vestiges of deprecated code that programmatically represented HTML.
+     * It represents an image that has been inserted directly into an HTML file as Base64 encoded data. A deprecated
+     * alternative used to exist that put the image in the CSS style section, but was deprecated because some
+     * browsers did not work with it.
+     *
+     * @param base64ImageData Base64 encoded image data
+     * @param imageType Typically this will be jpeg, png, gif, etc.
+     * @param style Style as specified in the CSS portion of the HTML document.
+     */
+    public InlineImage(String base64ImageData, String imageType, String style) {
+        KInlineImage = new io.github.william_hood.toolbox_kotlin.InlineImage(base64ImageData, imageType, style);
+    }
+
+    /**
+     * InlineImage: This is one of the remaining vestiges of deprecated code that programmatically represented HTML.
+     * It represents an image that has been inserted directly into an HTML file as Base64 encoded data. A deprecated
+     * alternative used to exist that put the image in the CSS style section, but was deprecated because some
+     * browsers did not work with it.
+     *
+     * @param base64ImageData Base64 encoded image data
+     * @param imageType Typically this will be jpeg, png, gif, etc.
+     */
+    public InlineImage(String base64ImageData, String imageType) {
+        this(base64ImageData, imageType, null);
+    }
+
+    /**
+     *
+     * @return The complete image tag ready to insert into an HTML document.
+     */
+    @Override
+    public String toString() {
+        return KInlineImage.toString();
+    }
+}
