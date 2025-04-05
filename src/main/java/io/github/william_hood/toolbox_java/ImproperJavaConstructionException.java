@@ -21,6 +21,11 @@
 
 package io.github.william_hood.toolbox_java;
 
+/**
+ * ImproperJavaConstructionException: Throw this in situations where an object or class has been constructed
+ * in such a way as to make it unusable. Example: An array needs to be passed in but the array given was
+ * size zero, or is populated with known bad data.
+ */
 public class ImproperJavaConstructionException extends Exception {
 
     /**

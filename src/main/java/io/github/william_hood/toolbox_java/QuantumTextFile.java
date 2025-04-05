@@ -32,8 +32,6 @@ public class QuantumTextFile {
     /**
      * QuantumTextFile: Prepares a text output file, but no file is actually created until and unless it is written to.
      *
-     * @constructor
-     *
      * @param filename The name of the file to write. No file will be created unless at least one call to print() or println() is made.
      * @param append Set this to true to append to an existing file.
      * @param outputStream Normally omit this. If you want to use QuantumTextFile to operate on a file (or any PrintWriter) you already have open, supply it here.
@@ -45,8 +43,6 @@ public class QuantumTextFile {
     /**
      * QuantumTextFile: Prepares a text output file, but no file is actually created until and unless it is written to.
      *
-     * @constructor
-     *
      */
     public QuantumTextFile() {
         this(Symbols.UNSET_STRING, false, null);
@@ -54,8 +50,6 @@ public class QuantumTextFile {
 
     /**
      * QuantumTextFile: Prepares a text output file, but no file is actually created until and unless it is written to.
-     *
-     * @constructor
      *
      * @param filename The name of the file to write. No file will be created unless at least one call to print() or println() is made.
      */
@@ -66,8 +60,6 @@ public class QuantumTextFile {
     /**
      * QuantumTextFile: Prepares a text output file, but no file is actually created until and unless it is written to.
      *
-     * @constructor
-     *
      * @param append Set this to true to append to an existing file.
      */
     public QuantumTextFile(Boolean append) {
@@ -77,8 +69,6 @@ public class QuantumTextFile {
     /**
      * QuantumTextFile: Prepares a text output file, but no file is actually created until and unless it is written to.
      *
-     * @constructor
-     *
      * @param outputStream Normally omit this. If you want to use QuantumTextFile to operate on a file (or any PrintWriter) you already have open, supply it here.
      */
     public QuantumTextFile(PrintWriter outputStream) {
@@ -87,8 +77,6 @@ public class QuantumTextFile {
 
     /**
      * QuantumTextFile: Prepares a text output file, but no file is actually created until and unless it is written to.
-     *
-     * @constructor
      *
      * @param filename The name of the file to write. No file will be created unless at least one call to print() or println() is made.
      * @param append Set this to true to append to an existing file.
@@ -100,8 +88,6 @@ public class QuantumTextFile {
     /**
      * QuantumTextFile: Prepares a text output file, but no file is actually created until and unless it is written to.
      *
-     * @constructor
-     *
      * @param append Set this to true to append to an existing file.
      * @param outputStream Normally omit this. If you want to use QuantumTextFile to operate on a file (or any PrintWriter) you already have open, supply it here.
      */
@@ -111,8 +97,6 @@ public class QuantumTextFile {
 
     /**
      * QuantumTextFile: Prepares a text output file, but no file is actually created until and unless it is written to.
-     *
-     * @constructor
      *
      * @param filename The name of the file to write. No file will be created unless at least one call to print() or println() is made.
      * @param outputStream Normally omit this. If you want to use QuantumTextFile to operate on a file (or any PrintWriter) you already have open, supply it here.

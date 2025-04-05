@@ -6,7 +6,7 @@
 
     <groupId>io.github.william-hood</groupId>
     <artifactId>toolbox-java</artifactId>
-    <version>3.1.0</version>
+    <version>3.1.1</version>
 
     <name>Hoodland Toolbox for Java</name>
     <description>An assorted miscellany of tools and toys (used by the author's other projects). This package provides Java wrappers around the Kotlin version so that it can be treated like another Java library, rather than the usual craziness of using a Kotlin Jar in Java.</description>
@@ -67,7 +67,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.1</version>  <!-- Check for latest version at Maven Central -->
+                <version>3.3.1</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -94,7 +94,7 @@
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.7.0</version><!-- Check for latest version at Maven Central -->
+                <version>0.7.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <publishingServerId>central</publishingServerId>

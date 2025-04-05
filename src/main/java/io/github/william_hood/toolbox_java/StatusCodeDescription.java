@@ -36,7 +36,7 @@ public class StatusCodeDescription {
     }
 
     /**
-     * isValidStatusCode: Returns true if this Int represents a valid status code number. (Between 100 & 599)
+     * isValidStatusCode: Returns true if this Int represents a valid status code number. (Between 100 and 599)
      */
     public static Boolean isValidStatusCode(int value) {
         return StatusCodeDescriptionKt.isValidStatusCode(value);

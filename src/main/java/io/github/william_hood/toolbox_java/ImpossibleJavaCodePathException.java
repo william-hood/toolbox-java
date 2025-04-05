@@ -21,6 +21,10 @@
 
 package io.github.william_hood.toolbox_java;
 
+/**
+ * ImpossibleJavaCodePathException: I have sometimes had cause to believe that control flow had reached a point in
+ * the code that should not be possible. Throw this at such a point to remove any doubt.
+ */
 public class ImpossibleJavaCodePathException extends Exception {
 
     /**

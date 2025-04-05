@@ -34,8 +34,6 @@ public class SubnameFactory {
      * with a unique suffix. MyTestA, MyTestB, etc. Use this to generate the suffix when programmatically generating
      * several similar items. This assumes a startingIndex and totalPlaces of zero.
      *
-     * @constructor
-     *
      */
     public SubnameFactory() {
         KSubnameFactory = new io.github.william_hood.toolbox_kotlin.SubnameFactory();
@@ -45,8 +43,6 @@ public class SubnameFactory {
      * SubnameFactory is used in cases where a lot of records (or fields, test cases, etc.) need to have the same name,
      * with a unique suffix. MyTestA, MyTestB, etc. Use this to generate the suffix when programmatically generating
      * several similar items. This assumes a totalPlaces of zero.
-     *
-     * @constructor
      *
      * @param startingIndex Each subname is a Base26 number with a corresponding long integer. Zero is A. Unless you know why you'd want to change it, omit this parameter so it uses the default value of zero.
      */
@@ -59,10 +55,8 @@ public class SubnameFactory {
      * with a unique suffix. MyTestA, MyTestB, etc. Use this to generate the suffix when programmatically generating
      * several similar items.
      *
-     * @constructor
-     *
      * @param startingIndex Each subname is a Base26 number with a corresponding long integer. Zero is A. Unless you know why you'd want to change it, omit this parameter so it uses the default value of zero.
-     * @param totalPlaces When rendering the subname as a string, use this to force the subname to take a minimum of <totalPlaces> characters. The default placeholder is '.', but you can change it after construction.
+     * @param totalPlaces When rendering the subname as a string, use this to force the subname to take a minimum of totalPlaces characters. The default placeholder is '.', but you can change it after construction.
      */
     public SubnameFactory(int startingIndex, int totalPlaces) {
         KSubnameFactory = new io.github.william_hood.toolbox_kotlin.SubnameFactory(startingIndex, totalPlaces);

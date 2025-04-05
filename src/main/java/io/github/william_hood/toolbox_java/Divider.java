@@ -25,11 +25,25 @@ import io.github.william_hood.toolbox_kotlin.DividerTypes;
 import io.github.william_hood.toolbox_kotlin.SymbolsKt;
 
 /**
- * Used for creating plaintext dividers of various types and lengths.
+ * Used for creating plaintext dividers of various types and lengths. Contains only static functions. Do not instantiate.
  */
 public class Divider {
+    // Do not instantiate
+    private Divider() {}
+
+    /**
+     * Use this if you don't know or don't care how long the divider should be.
+     */
     public static final int DEFAULT_DIVIDER_LENGTH = SymbolsKt.DEFAULT_DIVIDER_LENGTH;
+
+    /**
+     * Produces a single line divider.
+     */
     public static final io.github.william_hood.toolbox_kotlin.DividerTypes DIVIDER_TYPE_SINGLE = DividerTypes.SINGLE;
+
+    /**
+     * Produces a double-line divider.
+     */
     public static final io.github.william_hood.toolbox_kotlin.DividerTypes DIVIDER_TYPE_DOUBLE = DividerTypes.DOUBLE;
 
     /**

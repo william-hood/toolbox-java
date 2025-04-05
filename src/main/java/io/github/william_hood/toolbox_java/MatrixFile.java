@@ -27,6 +27,7 @@ import java.util.ArrayList;
 
 /**
  * MatrixFile: Manages a new or existing file with delimited data, such as comma or tab separated values.
+ * @param <T> The data type of the delimited data. Usually this is String.
  */
 public class MatrixFile<T> {
     private io.github.william_hood.toolbox_kotlin.MatrixFile<T> KMatrixFile;
@@ -149,10 +150,12 @@ public class MatrixFile<T> {
     /**
      * read: Constructs a MatrixFile instance based on the contents of an existing file.
      * Use String for the type if you're not sure.
+     * @param <T> The data type of the delimited data. Usually this is String.
      * @param completeFilePath The fully qualified path and file name to write to.
      * @param delimitingChar The character the file uses as a delimiter. This is typically a comma or semicolon.
-     * @param parser Use StringParser, IntParser, or FloatParser depending on the expected data type. (Custom parsers can be created using the Parser<T> interface.)
+     * @param parser Use StringParser, IntParser, or FloatParser depending on the expected data type. (Custom parsers can be created using the Parser(T) interface.)
      * @return Returns a MatrixFile instance with the contents of the specified file.
+     * @param <T> The data type of the delimited data. Usually this is String.
      */
     public static <T>MatrixFile<T> read(String completeFilePath, char delimitingChar, Parser<T> parser) {
         return new MatrixFile<T>(io.github.william_hood.toolbox_kotlin.MatrixFile.Companion.read(completeFilePath, delimitingChar, parser));
@@ -161,9 +164,11 @@ public class MatrixFile<T> {
     /**
      * read: Constructs a MatrixFile instance based on the contents of an existing file. (This version uses the default delimiter.)
      * Use String for the type if you're not sure.
+     * @param <T> The data type of the delimited data. Usually this is String.
      * @param completeFilePath The fully qualified path and file name to write to.
-     * @param parser Use StringParser, IntParser, or FloatParser depending on the expected data type. (Custom parsers can be created using the Parser<T> interface.)
+     * @param parser Use StringParser, IntParser, or FloatParser depending on the expected data type. (Custom parsers can be created using the Parser(T) interface.)
      * @return Returns a MatrixFile instance with the contents of the specified file.
+     * @param <T> The data type of the delimited data. Usually this is String.
      */
     public static <T>MatrixFile<T> read(String completeFilePath, Parser<T> parser) {
         return read(completeFilePath, DEFAULT_DELIMITER, parser);
